@@ -1,7 +1,7 @@
 
 'use strict'; 
 
-var n = Number(prompt('Write a prime numer: '));
+var n = Number(prompt('Write a prime number: '));
 let i = 2;
 
 var isPrime = function(p){
@@ -16,7 +16,7 @@ var isPrime = function(p){
 };
 console.log(isPrime());
 
-document.write('Is ' + n + ' a prim number? = ' + isPrime());
+document.write('Is ' + n + ' a prime number? = ' + isPrime());
 
 
 
