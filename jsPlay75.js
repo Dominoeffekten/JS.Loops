@@ -1,29 +1,41 @@
 'use strict';
 
-//array
-var flip;
-var arrRoll = [0, 0, 0, 0, 0, 0, 0];
-
-
+// a = what do we play
 var play = function(a) {
-	Math.floor(Math.random()* a + 1);
-	
-	while (flip = play(a)){
-		return arrRoll[flip]++;
-	}
+		Math.floor(Math.random()* a + 1);
 };
 
-//var a = Number(prompt('How many times do you want to play?'));
-var a = 6;
-let i = 1;
-console.log('Der blev slået ' + arrRoll[i++]);
+//a = what do we play
+//b = how many times
+var howManyTimes = function(b, a) {
+	
+	var flip;
+	var arrRoll = []; //array
+	
+	let i = 0;
+	while (i <= a) {        // dim and init array
+        arrRoll[i] = 0;
+        i += 1;
+    }
+
+    i = 0;
+    while (i < n) {         // play n times
+        flip = play(a);
+        arrRoll[flip] += 1;
+        i += 1;
+    }
+	
+};
 
 
+//var a = Number(prompt('How many sides do it have?')); // what do we play
+//var b = Number(prompt('How many times do you want to play?')); // how many times
+var a = 6; // what do we play
+var b = 2; // how many times
 
-document.write('Is ' + n + ' a prim number? = ' + isPrime());
+console.log(howManyTimes);
 
-
-
+//document.write('Is ' + n + ' a prim number? = ' + isPrime());
 
 
 
