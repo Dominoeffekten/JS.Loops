@@ -13,17 +13,24 @@ Save the function in a file jsLoops72.js.
 
 'use strict';
 
-var a = Number(prompt('Write a number and find its square root:'));
-var xo = 6
+var squareRoot = function(a){
+	let a = 9;
+	let b = 6;
+    
+	while (a <= 1) {
+		return 1;
+		a++;
+	}
+	//return Math.abs( a * (squareRoot(a - 1)) );
+	return Math.abs( (squareRoot(a) + (a/squareRoot(a)) ) /2 );
+	//return Math.abs( (b + (a/b))/2 );
+}; 
 
-var squareRoot = function(x1){
-	if (){
-		
-		}
-} Math.abs 
+var a = Number(prompt('Write a number and find its square root:'));
+
+console.log(squareRoot(a));
 
 //x1 = (x0 + a/x0)/2
-return (x0 + (a/x0)/2
-
+	
 
 
